@@ -95,5 +95,6 @@ angular.module('ResourceLocator').controller('ResourcesIndexController', functio
   return {
     templateUrl: '/templates/directives/recommendations.html'
   };
+
 });
 
