@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="NoteWrangler" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="NoteWrangler" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="NoteWrangler" class="no-js lt-ie9"> <![endif]-->
+<!--[if lt IE 7]>      <html lang="en" ng-app="ResourceLocator" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="ResourceLocator" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="ResourceLocator" class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html lang="en" ng-app="NoteWrangler">
+<html lang="en" ng-app="ResourceLocator">
 <!--<![endif]-->
 
   <head>
@@ -12,36 +12,51 @@
     <title>Note Wrangler</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/application.css" />
+    <link rel="stylesheet" href="css/chosen.min.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <div class="nav-wrapper has-dropdown">
-      <div class="nav-content">
-        <div class="wrapper">
-          <div class="nav-content-layout">
-            <div class="nav-list">
-              <nw-page-nav-item>Users</nw-page-nav-item>
-              <nw-page-nav-item>Notes</nw-page-nav-item>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container" ng-controller="NavbarCtrl">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="http://girldevelopit.com"><img src="images/gdi-logo.png" alt="Girl Develop It Logo"/></a>
+              </div>
+              <p class="tagline">Get started with help and resources in your own community</p>
+              <div class="btn-group pull-right">
+                <button class="btn btn-primary" type="button">Contribute</button>
+                <button aria-expanded="false" data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
+                  <span class="caret"></span>
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <ul role="menu" class="dropdown-menu">
+                  <li><a href="#">Contribute a story</a></li>
+                  <li><a href="#">Be a mentor</a></li>
+                  <li><a href="#">List a resource</a></li>
+                  <li class="divider"></li>
+                  <li><button class="btn btn-donate"><a href="#">Donate to our Scholarship Fund</a></button></li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          <div class="nav-content-layout">
-            <nw-session></nw-session>
-            <input class="form-input-search" type="text" placeholder="Search..." ng-model="search">
-          </div>
-
-        </div>
+        </nav>
       </div>
     </div>
-    <div class="hero-wrapper">
-      <div class="hero-content">
-        <div class="hero"></div>
-      </div>
-    </div>
+
     <div class="main-wrapper">
-        <div ng-view></div>
+      <div ng-view></div>
     </div>
+
+    <footer class="brand">
+      <div class="container-fluid">
+
+        <p>Made with love by Team Warrior Princess at Battlehack Raleigh.</p> <i>To learn about ways to support Girl Develop It, email us at sponsorships@girldevelopit.com or visit our Donate page.</i>
+      </div>
+    </footer>
 
     <!-- Vendors -->
     <script src="/js/vendor/markdown.js"></script>
@@ -77,7 +92,7 @@
     <script src="/js/services/markdown.js"></script>
 
     <!-- Resources -->
-    <script src="/js/resources/note.js"></script>
+    <script src="/js/resources/resource.js"></script>
     <script src="/js/resources/user.js"></script>
 
     <!-- Controllers -->

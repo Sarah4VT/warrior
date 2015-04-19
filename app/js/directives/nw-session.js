@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').directive('nwSession', function(Session) {
+angular.module('ResourceLocator').directive('nwSession', function(Session) {
   return {
     replace: true,
     restrict: 'E',

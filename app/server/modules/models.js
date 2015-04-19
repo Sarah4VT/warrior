@@ -1,6 +1,5 @@
 /*
-This file is for configuring the model relations. For example, users can have many
-notes and notes belong to a user. This module can also be required in other modules to
+This file is for configuring the model relations. This module can also be required in other modules to
 avoid always need sequelize as well to import the models
 */
 
@@ -10,27 +9,17 @@ var Sequelize = require('sequelize');
 // matter, anything works. Other databases such as postgresql could be used here instead.
 // see: http://sequelizejs.com/docs/1.7.8/usage#basics
 // for more information on how this can be configured.
-var sequelize = new Sequelize('note_wrangler', 'username', 'password', {
+var sequelize = new Sequelize('warriorPrincess', 'username', 'password', {
   dialect: "sqlite",
   port:    3306,
   storage: './database.sqlite' // Local to where app.js is running from
 });
 
 var User = sequelize.import(__dirname + "/models/user");
-var Note = sequelize.import(__dirname + "/models/note");
-var Category = sequelize.import(__dirname + "/models/category");
-
-// Set user/note associations
-User.hasMany(Note);
-Note.belongsTo(User);
-
-// Set note/note type associations
-Category.hasMany(Note);
-Note.belongsTo(Category);
+var Resource = sequelize.import(__dirname + "/models/resource");
 
 module.exports = {
   User: User,
-  Note: Note,
-  Category: Category,
+  Resource: Resource,
   sequelize: sequelize
 }

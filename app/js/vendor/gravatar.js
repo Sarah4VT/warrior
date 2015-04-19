@@ -24,7 +24,7 @@ angular.module('Gravatar', [])
 /*
 These two are exactly the same. The above provider adds the `this.setSize` function for configuration
 */
-// angular.module('NoteWrangler').factory('GravatarService', function() {
+// angular.module('ResourceLocator').factory('GravatarService', function() {
 //   var avatarSize = 80; // Default size
 //   var avatarUrl = "http://www.gravatar.com/avatar/";
 //
@@ -35,7 +35,7 @@ These two are exactly the same. The above provider adds the `this.setSize` funct
 //   }
 // });
 
-// angular.module('NoteWrangler').provider('GravatarService', function gravatarServiceProvider() {
+// angular.module('ResourceLocator').provider('GravatarService', function gravatarServiceProvider() {
 //   var avatarSize = 80; // Default size
 //   var avatarUrl = "http://www.gravatar.com/avatar/";
 //

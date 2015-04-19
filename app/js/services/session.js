@@ -3,7 +3,7 @@
   as the service loads. Any subsequent requests for the session data are just returned
   the promise so redunant ajax calls are not made.
 */
-angular.module('NoteWrangler').factory('Session', function SessionFactory($http, $location) {
+angular.module('ResourceLocator').factory('Session', function SessionFactory($http, $location) {
   var sessionPromise = $http({method: 'GET', url: "/session"});
 
   return {

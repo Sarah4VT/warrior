@@ -3,7 +3,7 @@ This is a way of handling ajax requests using NgResource, it performs a similar 
 to the UserService.
 */
 
-angular.module('NoteWrangler').factory('User', function UserFactory($resource) {  
+angular.module('ResourceLocator').factory('User', function UserFactory($resource) {
   return $resource('/users/:id', {}, {
     update: {
       method: "PUT"

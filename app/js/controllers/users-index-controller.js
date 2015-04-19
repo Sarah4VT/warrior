@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('UsersIndexController', function($scope, User, $gravatar) {
+angular.module('ResourceLocator').controller('UsersIndexController', function($scope, User, $gravatar) {
   
   // Without NgResource
   // User.all().success(function(data) {

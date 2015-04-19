@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').directive('nwPageNavItem', function($location) {
+angular.module('ResourceLocator').directive('nwPageNavItem', function($location) {
   return {
     replace: true,
     restrict: "E",

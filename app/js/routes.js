@@ -4,11 +4,11 @@
   in this file. Since this isn't a node course we're going to skip it. For all intensive
   purposes, html5 mode and url hash mode perform the same when within an angular app.
 */
-angular.module('NoteWrangler').config(['$routeProvider', function($routeProvider) {
+angular.module('ResourceLocator').config(['$routeProvider', function($routeProvider) {
   $routeProvider
     .when('/', {
-      // redirect to the notes index
-      redirectTo: '/notes'
+      // redirect to the resource index
+      redirectTo: '/resource'
     })
     
     .when('/users', {
@@ -21,22 +21,22 @@ angular.module('NoteWrangler').config(['$routeProvider', function($routeProvider
       controller: 'UsersShowController'
     })
     
-    .when('/notes', {
+    .when('/resource', {
       templateUrl: 'templates/pages/notes/index.html',
       controller: 'NotesIndexController'
     })
     
-    .when('/notes/new', {
+    .when('/resource/new', {
       templateUrl: 'templates/pages/notes/edit.html',
       controller: 'NotesCreateController'
     })
     
-    .when('/notes/:id', {
+    .when('/resource/:id', {
       templateUrl: 'templates/pages/notes/show.html',
       controller: 'NotesShowController'
     })
 
-    .when('/notes/:id/edit', {
+    .when('/resource/:id/edit', {
       templateUrl: 'templates/pages/notes/edit.html',
       controller: 'NotesEditController'
     })

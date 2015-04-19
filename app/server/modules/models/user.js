@@ -9,10 +9,11 @@ This particular model is for users
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define("User", {
     name: DataTypes.STRING,
-    username: DataTypes.STRING,
-    password: DataTypes.STRING,
     bio: DataTypes.STRING,
-    twitter_handle: DataTypes.STRING,
-    site: DataTypes.STRING
+    video: DataTypes.STRING,
+    location: DataTypes.STRING,
+    url: DataTypes.STRING,
+    mentor: DataTypes.BOOLEAN,
+    email: DataTypes.STRING
   });
 }

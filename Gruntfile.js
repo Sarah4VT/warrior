@@ -12,14 +12,14 @@ module.exports = function(grunt) {
         files: ['app/sass/**/*.sass'],
         tasks: ['sass'],
         options: {
-          livereload: true,
-        },
-      },
+          livereload: true
+        }
+      }
     }
   });
 
   // Load the npm installed tasks
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.registerTask('default', ['sass','watch']);
+  grunt.registerTask('default', ['watch']);
 };

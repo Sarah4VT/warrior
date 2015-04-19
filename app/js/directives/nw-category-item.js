@@ -1,4 +1,4 @@
-angular.module('NoteWrangler')
+angular.module('ResourceLocator')
 .directive('nwCategoryItem', function() {
   return {
     restrict: "E",
@@ -30,7 +30,7 @@ angular.module('NoteWrangler')
 });
 
 //simple version
-// angular.module('NoteWrangler')
+// angular.module('ResourceLocator')
 // .directive('nwCategoryItem', function() {
 //   return {
 //     restrict: "E",

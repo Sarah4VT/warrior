@@ -7,8 +7,11 @@ This particular model is for categories
 */
 
 module.exports = function(sequelize, DataTypes) {
-  return sequelize.define("Category", {
+  return sequelize.define("Resource", {
     name: DataTypes.STRING,
-    icon: DataTypes.STRING
+    category: DataTypes.STRING,
+    pay: DataTypes.STRING,
+    location: DataTypes.STRING,
+    url: DataTypes.STRING
   });
 }

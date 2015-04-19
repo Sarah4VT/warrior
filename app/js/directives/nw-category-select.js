@@ -1,4 +1,4 @@
-angular.module('NoteWrangler')
+angular.module('ResourceLocator')
 .directive('nwCategorySelect', function(Category) {
   return {
     replace: true,
@@ -45,7 +45,7 @@ angular.module('NoteWrangler')
 
 //simple version
 
-// angular.module('NoteWrangler')
+// angular.module('ResourceLocator')
 // .directive('nwCategorySelect', function(Category) {
 //   return {
 //     replace: true,

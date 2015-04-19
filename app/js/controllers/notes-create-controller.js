@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('NotesCreateController', function($scope, Note, Category, Session) {
+angular.module('ResourceLocator').controller('NotesCreateController', function($scope, Note, Category, Session) {
   
   // redirect if a user is not logged in
   Session.authenticate();

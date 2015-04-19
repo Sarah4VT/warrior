@@ -3,7 +3,7 @@ This is an example of how to handle ajax data calls without using NgResource
 This is for reference only, we favor using Note over this in the app.
 */
 
-angular.module('NoteWrangler')
+angular.module('ResourceLocator')
 .factory('Note', ['$http', function NoteFactory($http) {
   return {
     all: function() {

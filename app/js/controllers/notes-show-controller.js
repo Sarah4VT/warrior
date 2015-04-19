@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('NotesShowController', function($scope, $routeParams, Note, Session) {
+angular.module('ResourceLocator').controller('NotesShowController', function($scope, $routeParams, Note, Session) {
   // Without NgResource
   // Note.find($routeParams.id).success(function(data) {
   //   $scope.note = data;

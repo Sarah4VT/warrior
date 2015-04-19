@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').factory('Category', function CategoryFactory($http, $q) {
+angular.module('ResourceLocator').factory('Category', function CategoryFactory($http, $q) {
   var categories;
   
   return {

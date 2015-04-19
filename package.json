@@ -1,10 +1,7 @@
 {
-  "name": "note-wrangler",
+  "name": "warriorPrincess",
   "private": true,
-  "version": "0.0.0",
-  "description": "A Code School Angular Production.",
-  "repository": "https://**alyssa here**",
-  "license": "MIT",
+  "version": "0.0.1",
   "dependencies": {
     "bcrypt": "0.8.2",
     "body-parser": "^1.4.3",

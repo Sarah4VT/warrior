@@ -1,6 +1,6 @@
 ## Getting Started
 
-To get you started you can simply clone the note-wrangler repo and install the dependencies:
+To get you started you can simply clone the repo and install the dependencies:
 
 ### Install Dependencies
 
@@ -32,14 +32,3 @@ npm run debug
 ```
 This starts the app in debug mode which allows you you to use [node-inspector](https://github.com/node-inspector/node-inspector)
 You can open another browser tab at: `http://127.0.0.1:8080/debug?port=5858` to get to the web console.
-
-## Additional Resources
-
-For more information on AngularJS and other kick-butt languages check out [Code School](https://www.codeschool.com/)!
-
-[angular]: http://angularjs.org/
-[git]: http://git-scm.com/
-[npm]: https://www.npmjs.org/
-[node]: http://nodejs.org
-[http-server]: https://github.com/nodeapps/http-server
-[nvm]: https://github.com/creationix/nvm

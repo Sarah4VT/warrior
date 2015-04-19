@@ -7,7 +7,7 @@
 //
 // The search term value should come first, followed by the category filter term
 //
-angular.module('NoteWrangler')
+angular.module('ResourceLocator')
 .filter('notesFilter', function(){
   return function(notesInput, titleSearch, category) {
     var note, categoryMatches, titleMatches;

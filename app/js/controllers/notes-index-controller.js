@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('NotesIndexController', function($scope, Note, Session) {
+angular.module('ResourceLocator').controller('NotesIndexController', function($scope, Note, Session) {
   // Without NgResource
   // Note.all().success(function(data) {
   //   $scope.notes = data;

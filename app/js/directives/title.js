@@ -1,4 +1,4 @@
-angular.module('NoteWrangler')
+angular.module('ResourceLocator')
 .directive('title', function($timeout) {
   return function(scope, element) {
     $timeout(function(){

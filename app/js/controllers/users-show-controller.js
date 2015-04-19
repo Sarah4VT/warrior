@@ -1,4 +1,4 @@
-angular.module('NoteWrangler').controller('UsersShowController', function($scope, $routeParams, User, $gravatar) {
+angular.module('ResourceLocator').controller('UsersShowController', function($scope, $routeParams, User, $gravatar) {
   
   // Without NgResource
   // User.find($routeParams.id).success(function(data) {
