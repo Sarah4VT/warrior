@@ -72,38 +72,13 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4">
-                    <button class="get-recommendation btn btn-default" type="submit">Get a Recommendation</button>
+                    <button class="get-recommendation btn btn-default" type="submit" ng-click="toggleRecs()">Get a Recommendation</button>
                 </div>
             </div>
         </div>
     </section>
 </div>
+<div recs ng-show="recsShown"></div>
 
 
-<!-- Map and List of recommendations -->
 
-<hr>
-<section class="row map">
-    <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="row">
-            <h2 class="text-center">Some resources near you</h2>
-            <div class="us_map"><div class="map"></div></div>
-
-            <div class="col-xs-6">
-                <article class="person">
-                    <h3>Rachel Nabors</h3>
-                    <p>This person's story. Cupcake ipsum dolor sit. Amet tart cookie soufflé soufflé. Tootsie roll lollipop gummies liquorice. Fruitcake dessert cotton candy lollipop lollipop jelly beans topping. Oat cake caramels cupcake brownie donut carrot cake bear claw cupcake. Jelly beans tart macaroon liquorice tootsie roll pie. Gummies lollipop sweet powder candy canes. Jelly-o pie jujubes fruitcake caramels sweet dessert. Candy gummi bears icing chocolate cake. Croissant candy pastry brownie. Biscuit donut bear claw. Chocolate bar cheesecake sweet. Candy dessert marshmallow jelly jujubes.</p>
-                    <button>Contact Rachel</button>
-                </article>
-            </div>
-
-            <div class="col-xs-6">
-                <article class="resource">
-                    <h3>Girl Develop It</h3>
-                    <i>In-person classes</i>
-                    <p>Girl Develop It is a nonprofit organization that exists to provide affordable and judgment-free opportunities for women interested in learning web and software development. Through in-person classes and community support, Girl Develop It helps women of diverse backgrounds achieve their technology goals and build confidence in their careers and their every day lives.</p>
-                    <button>Learn more</button>
-                </article>
-            </div>
-        </div>
-</section>

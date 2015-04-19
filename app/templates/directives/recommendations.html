@@ -1,0 +1,30 @@
+
+<!-- Map and List of recommendations -->
+
+<hr>
+<section class="row map">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <div class="row">
+            <h2 class="text-center">Some resources near you</h2>
+            <div class="mapcontainer"><div class="map"></div></div>
+
+            <div class="col-xs-6">
+                <article class="person" ng-repeat="mentor in mentors">
+                    <h3>{{mentor.name}}</h3>
+                    <p>{{mentor.story}}</p>
+                    <button>Contact {{mentor.name}}</button>
+                </article>
+            </div>
+
+            <div class="col-xs-6">
+                <article class="resource" ng-repeat="resource in resources">
+                    <h3>{{resource.name}}</h3>
+                    <i>{{resource.type}}</i>
+                    <a href="{{resource.url}}" target="_blank">{{resource.url}}</a>
+                    <p>{{resource.description}}"</p>
+                    <button>Learn more</button>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>

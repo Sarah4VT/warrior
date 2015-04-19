@@ -1,4 +1,4 @@
-angular.module('ResourceLocator').controller('UsersIndexController', function($scope, User, $gravatar) {
+angular.module('ResourceLocator').controller('UsersIndexController', function($scope, User) {
   
   // Without NgResource
   // User.all().success(function(data) {

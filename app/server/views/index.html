@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="css/chosen.min.css" />
     <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src='https://platform.venmo.com/sdk.js'></script>
   </head>
 
-  <body>
+  <body ng-controller="ResourcesIndexController" >
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
         <nav class="navbar navbar-default">
@@ -26,7 +27,8 @@
               <div class="navbar-header">
                 <a class="navbar-brand" href="http://girldevelopit.com"><img src="images/gdi-logo.png" alt="Girl Develop It Logo"/></a>
               </div>
-              <p class="tagline">Get started with help and resources in your own community</p>
+              <p class="tagline">Get started with help and resources in your own community </p>
+
               <div class="btn-group pull-right">
                 <button class="btn btn-primary" type="button">Contribute</button>
                 <button aria-expanded="false" data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">
@@ -34,11 +36,12 @@
                   <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <ul role="menu" class="dropdown-menu">
-                  <li><a href="#">Contribute a story</a></li>
+                  <li><a href="#" ng-click="toggleStoryModal()" data-toggle="modal" data-target="#tellYourStory">Contribute a story</a></li>
                   <li><a href="#">Be a mentor</a></li>
-                  <li><a href="#">List a resource</a></li>
+                  <li><a href="#" ng-click="toggleResourceModal()" data-toggle="modal" data-target="#addResource">List a resource</a></li>
                   <li class="divider"></li>
-                  <li><button class="btn btn-donate"><a href="#">Donate to our Scholarship Fund</a></button></li>
+                  <li> Donate to our Scholarship Fund</li>
+                  <li><a class="venmo-pay-button" data-recipient-id="1397129314566144218"></a></li>
                 </ul>
               </div>
             </div>
@@ -46,9 +49,11 @@
         </nav>
       </div>
     </div>
-
+    <div submit ng-show="storyModalShown"></div>
+    <div resource ng-show="resourceModalShown"></div>
     <div class="main-wrapper">
       <div ng-view></div>
+
     </div>
 
     <footer class="brand">
@@ -64,10 +69,19 @@
     <script src="/js/vendor/angular.js"></script>
     <script src="/js/vendor/angular-route.js"></script>
     <script src="/js/vendor/angular-resource.js"></script>
+
+
+
+    <script src="/js/vendor/angular-resource.js"></script>
     <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
 
     <script src="/js/app.js"></script>
     <script src="/js/routes.js"></script>
+
+    <script src="/js/vendor/raphael-min.js"></script>
+    <script src="/js/vendor/jquery.mapael.js"></script>
+
+    <script src="js//vendor/usa_states.js"></script>
 
     <!-- Directives -->
     <script src="/js/directives/nw-card.js"></script>
