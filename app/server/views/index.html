@@ -15,10 +15,22 @@
     <link rel="stylesheet" href="css/chosen.min.css" />
     <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/chosen.min.css"/>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     <script src='https://platform.venmo.com/sdk.js'></script>
+    <script src="/js/vendor/leaflet.js"></script>
+
+    <style>
+      #map{ width: 100px;
+      height: 100px;}
+    </style>
   </head>
 
   <body ng-controller="ResourcesIndexController" >
+
+
+  <div id="map"></div>
+
     <div class="navbar navbar-default navbar-static-top">
       <div class="container">
         <nav class="navbar navbar-default">
@@ -54,6 +66,7 @@
     <div class="main-wrapper">
       <div ng-view></div>
 
+
     </div>
 
     <footer class="brand">
@@ -65,7 +78,10 @@
 
     <!-- Load Js libs -->
     <script src="/js/vendor/jquery.js"></script>
+
     <script src="/js/vendor/bootstrap.js"></script>
+  <script src="/js/vendor/chosen.jquery.min.js"></script>
+  <script src="js/vendor/script.js"></script>
     <script src="/js/vendor/angular.js"></script>
     <script src="/js/vendor/angular-route.js"></script>
     <script src="/js/vendor/angular-resource.js"></script>
@@ -97,6 +113,9 @@
     <!-- Controllers -->
     <script src="/js/controllers/resource-index-controller.js"></script>
     <script src="/js/controllers/users-index-controller.js"></script>
+    <script src="/js/vendor/chosen.jquery.min.js"></script>
+    <script src="js/vendor/script.js"></script>
+
 
   </body>
 </html>
