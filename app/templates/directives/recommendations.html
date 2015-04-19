@@ -13,6 +13,9 @@
                 // initialize the map
                 var map = L.map('map').setView([42.35, -71.08], 13);
 
+                var marker = L.marker([42.349443, -71.077868]).addTo(map);
+                marker.bindPopup("<b>JQuery Meetup</b><br>JQuery is awesome!").openPopup();
+
                 // load a tile layer
                 L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
                         {
