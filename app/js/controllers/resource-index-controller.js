@@ -31,6 +31,13 @@ angular.module('ResourceLocator').controller('ResourcesIndexController', functio
     $scope.recsShown = !$scope.recsShown;
   };
 
+  $scope.mentorShown = false;
+
+  $scope.toggleMentorModal = function(){
+    $scope.mentorShown = !$scope.mentorShown;
+  };
+
+
   $scope.mentors = [
     {
       "name": "Rachel Nabors",
@@ -89,3 +96,4 @@ angular.module('ResourceLocator').controller('ResourcesIndexController', functio
     templateUrl: '/templates/directives/recommendations.html'
   };
 });
+
