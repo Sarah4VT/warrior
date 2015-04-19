@@ -79,8 +79,13 @@
     <script src="/js/vendor/jquery.js"></script>
 
     <script src="/js/vendor/bootstrap.js"></script>
-  <script src="/js/vendor/chosen.jquery.min.js"></script>
-  <script src="js/vendor/script.js"></script>
+    <script src="/js/vendor/chosen.jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $(".chzn-select").chosen();
+      }); 
+    </script>
+    <script src="js/vendor/script.js"></script>
     <script src="/js/vendor/angular.js"></script>
     <script src="/js/vendor/angular-route.js"></script>
     <script src="/js/vendor/angular-resource.js"></script>
@@ -92,11 +97,6 @@
 
     <script src="/js/app.js"></script>
     <script src="/js/routes.js"></script>
-
-    <script src="/js/vendor/raphael-min.js"></script>
-    <script src="/js/vendor/jquery.mapael.js"></script>
-
-    <script src="js//vendor/usa_states.js"></script>
 
     <!-- Directives -->
     <script src="/js/directives/nw-card.js"></script>
@@ -112,9 +112,7 @@
     <!-- Controllers -->
     <script src="/js/controllers/resource-index-controller.js"></script>
     <script src="/js/controllers/users-index-controller.js"></script>
-    <script src="/js/vendor/chosen.jquery.min.js"></script>
     <script src="js/vendor/script.js"></script>
-
 
   </body>
 </html>
