@@ -22,22 +22,22 @@ angular.module('ResourceLocator').config(['$routeProvider', function($routeProvi
     })
     
     .when('/resource', {
-      templateUrl: 'templates/pages/notes/index.html',
-      controller: 'NotesIndexController'
+      templateUrl: 'templates/pages/resources/index.html',
+      controller: 'ResourcesIndexController'
     })
     
     .when('/resource/new', {
-      templateUrl: 'templates/pages/notes/edit.html',
+      templateUrl: 'templates/pages/resources/edit.html',
       controller: 'NotesCreateController'
     })
     
     .when('/resource/:id', {
-      templateUrl: 'templates/pages/notes/show.html',
+      templateUrl: 'templates/pages/resources/show.html',
       controller: 'NotesShowController'
     })
 
     .when('/resource/:id/edit', {
-      templateUrl: 'templates/pages/notes/edit.html',
+      templateUrl: 'templates/pages/resources/edit.html',
       controller: 'NotesEditController'
     })
     

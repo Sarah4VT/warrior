@@ -7,8 +7,5 @@ angular.module('ResourceLocator').controller('UsersIndexController', function($s
   
   // With NgResource
   $scope.users = User.query();
-  
-  $scope.gravatarUrl = function(user) {
-    return $gravatar.generate(user.email);
-  }
+
 });

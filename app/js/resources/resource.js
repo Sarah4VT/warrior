@@ -3,8 +3,8 @@ This is a way of handling ajax requests using NgResource, it performs a similar 
 to the Note Service.
 */
 
-angular.module('ResourceLocator').factory('Note', function NoteFactory($resource) {
-  return $resource('/notes/:id', {}, {
+angular.module('ResourceLocator').factory('Resource', function ResourceFactory($resource) {
+  return $resource('/resource/:id', {}, {
     update: {
       method: "PUT"
     }
